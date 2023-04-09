@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<html>
+<body style="background-color:powderblue;">
+
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1 style="font-family:courier;">HEIGHT PREDICTION :)</h1>
+<p style="font-family:verdana;">Enter your details</p>
+<form  action="{{ url_for('predict')}}" method="post">
+<h2>What is the weight?(In kilo grams)<h2>
+<input id='first' name="Weight"required="required" type="number">
+</body> 
+ <br><br><button id="sub" type="submit ">Submit for Height</button>
+ </form>
+</html>
+</form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
