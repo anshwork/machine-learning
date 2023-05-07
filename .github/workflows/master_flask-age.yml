@@ -17,7 +17,8 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - task: CmdLine@2
+      - name: cHANGING WORKING DIRECTORY
+        uses: CmdLine@2
         inputs:
           script: |
             echo  '$(System.DefaultWorkingDirectory)'
