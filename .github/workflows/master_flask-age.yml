@@ -17,6 +17,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - task: CmdLine@2
+        inputs:
+          script: |
+            echo  '$(System.DefaultWorkingDirectory)'
+            dir
+            dir heightpredict
       - name: Set up Python version
         uses: actions/setup-python@v1
         with:
